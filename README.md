@@ -34,30 +34,33 @@ Setup Steps:
 8. Correct Content Sturcture is:
    student-success-platform/          ← Main project folder
 │
-├── app.py                         ← Flask backend
-├── landing.html                   ← Your landing page (keep it here)
-│
-└── static/                        ← Static folder (keep it here)
+├── app_with_cors.py                         ← Flask backend
+├── landing-page
+    ├── landing.html            ← Rename from index.html
+    ├── page.css
+    └── app.js                  ← Your landing page (keep it here)
+    │
+    └── static/                        ← Static folder (keep it here)
     ├── login.html                 ← Login page (RENAME from index.html)
     ├── style.css                  ← Login page styles
     └── app.js                     ← Login page JavaScript
    
-9. Start Backend Server: (in virtual mode)
+10. Start Backend Server: (in virtual mode)
     Navigate to project directory i.e. student-success-platform
    activate venv : venv\Scripts\activate
    Run : python app_with_cors.py
    
-10. Start Frontend:
+11. Start Frontend:
     Install "Live Server" extension in VS Code
     Right-click login.html
     Select "Open with Live Server"
     
-11. Access the Application (Optional) :
+12. Access the Application (Optional) :
   Frontend: http://localhost:8000
   Backend API: http://localhost:5000/api
   API Health Check: http://localhost:5000/api/health
 
-12. Testing:
+13. Testing:
 Test Credentials
 Students:
 
